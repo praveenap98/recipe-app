@@ -9,14 +9,18 @@ const App = () => {
     const [inputText, setInputText] = useState('');
     const [searchText, setSearchText] = useState('chicken');
     const [recipes, setRecipes] = useState([]);
-    const getRecipe = async() => {
-        let response = await fetch(`https://api.edamam.com/search?q=${searchText}&app_id=${API_APP_ID}&app_key=${API_APP_KEY}`);
-        response = await response.json();
-        console.log(response.hits);
-        setRecipes(response.hits);
-    }
+    
 
-    useEffect(() => { getRecipe(); }, [searchText]);
+    useEffect(() => { 
+        const getRecipe = async() => {
+            let response = await fetch(`https://api.edamam.com/search?q=${searchText}&app_id=${API_APP_ID}&app_key=${API_APP_KEY}`);
+            response = await response.json();
+            console.log(response.hits);
+            setRecipes(response.hits);
+        }
+
+        getRecipe();
+     }, [searchText]);
     return(
         <div className='main-container'>
             <h2>Find the reeecipeee...!</h2>
