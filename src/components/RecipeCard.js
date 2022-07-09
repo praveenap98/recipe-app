@@ -15,7 +15,7 @@ const RecipeCard = ({recipe : {label, ingredients, calories, image, url}}) => {
            }
            <p>{calories}</p>
            <img src={image} alt={label}></img>
-           <a className='button' href={url} target='_blank'>Visit site</a>
+           <a className='button' href={url} target='_blank' rel="noreferrer">Visit site</a>
         </div>
     )
 }
