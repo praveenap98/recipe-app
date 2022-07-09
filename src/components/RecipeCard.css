@@ -1,0 +1,36 @@
+.recipe-card {
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px 10px;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 430px;
+}
+
+img {
+    border-radius: 200px;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    
+}
+
+ol {
+    text-align: left;
+    padding: 5px;
+}
+
+.recipe-card * {
+    padding: 10px;
+}
+
+.button {
+    background-color: lightblue;
+    padding: 10px;
+    width: 150px;
+}

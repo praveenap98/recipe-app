@@ -1,0 +1,8 @@
+.recipe-container {
+    /* border: 1px solid black; */
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-evenly;
+}
