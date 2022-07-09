@@ -13,6 +13,7 @@
     flex-direction: column;
     align-items: center;
     background: linear-gradient(to right, #d3cce3, #e9e4f0);
+    width: 90%;
 }
 
 h2 {
